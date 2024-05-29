@@ -31,7 +31,7 @@ const connectDB = async () => {
 app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "/images")));
 app.use(cors({
-    origin: 'https://nkblog-app.netlify.app/', // Replace with your actual Netlify client URL
+    origin: 'https://nkblog-app.netlify.app', 
     credentials: true,
 }));
 app.use(cookieParser());
